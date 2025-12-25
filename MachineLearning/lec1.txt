@@ -1,0 +1,231 @@
+Intro to machine learning
+
+you provide data and and train the model on algorithms 
+and then the model will act according to the data
+
+lets say youre making a program to called 
+spam classifier but in the programming way you will have
+to write 1000+ of if else cases 
+so ml is used 
+
+ml is done from pattern
+
+in ml all you have to do is give the right data
+not rules
+ 
+
+so if ml can do everyhting why do we need dl
+
+dl is basically a class of algorithms
+you use the same procedures like in ml
+its just that the algorithms in dl are a diffrent
+
+dl is inspired by neurons (our biology)
+
+in dl you dont have to worry about the features but 
+in ml you have to make the featues in dl 
+it extract them 
+
+in dl the more data you gives the better it 
+gets
+
+in ml it dosent keep on improving but it stablizes
+
+on large data dl is better, on small data ml
+
+
+Types of Machine Learning
+1: Supervised Learning
+
+You train the model with input and output both (you already know the correct answers).
+
+The model learns to predict the output for new inputs.
+
+Regression: Used when the output is a number (like predicting price, temperature, etc.).
+Classification: Used when the output is a category (like “spam or not spam,” “dog or cat”).
+
+2: Unsupervised Learning
+
+You only give input data (no correct answers are given).
+
+The model tries to find patterns or structure in the data on its own.
+
+Clustering: Groups similar data points together (like grouping customers by buying habits).
+
+Dimensionality Reduction: Simplifies data by removing extra or less important features.
+
+Anomaly Detection: Finds unusual data points that don’t fit the pattern (like detecting fraud).
+
+Association: Finds relationships between items (like “people who buy bread also buy butter”).
+
+3: Semi-Supervised Learning
+
+You give the model a few labeled examples and many unlabeled ones.
+
+It learns from both to make better predictions.
+(Example: a few pictures labeled “cat” and “dog,” and many pictures without labels.)
+
+4: Reinforcement Learning
+
+The model (called an agent) learns by doing actions and getting rewards or penalties.
+
+Goal: learn which actions give the best reward over time.
+(Example: a robot learning to walk or a game bot learning to win a game.)
+
+
+
+production is the server on which the code will run
+ml softwares are deployed on these server 
+
+batch vs online ml
+
+batch = use all of the data together to train the model
+no incremental training 
+
+you train the model on an offline server then test
+then you deploy the model which has learned online
+
+
+the problem is that the model is static 
+because when you train it the model wont keep on
+learning so in term of time it isnt the best option
+because it will become obsolete so you will have to 
+retrain it from time to time and in the data 
+when retraining it you will have to merge the new data
+with the old data and then retrain it 
+
+the limation may come that the data may become 
+too large 
+another limitation is connectivity 
+another one is availability
+
+
+online learning
+
+usuability will impove the product
+this learning is done incrementally 
+
+you start with some data and feed it to the ml algorithm
+test it then send it to the server 
+on the server you keep on getitng new data so it 
+learning from that data to 
+you are training the model dynamically
+e.g youtube (recommendations)
+
+
+when to use what ?
+
+1 there is a concept drift
+where there are fast changes (stock exchange = online learning)
+2 cost effective
+3 faster solution
+
+How to implement?
+python libraries sckit learn, river etc
+
+
+Learning Rate
+
+you have to keep a correct learning rate 
+so the model dosent misbehave
+
+out of core learning 
+
+the data is so huge that you cannot load it 
+in one go in this scenario 
+you can use online learning where you convert the 
+data into small data sets
+however all this input of data is done offline
+not online 
+
+Disadvantage
+
+1 tricky to use
+2 Risky: (hacker)
+
+
+
+how does the machine learnign model learn
+
+instance vs model based learning
+
+learning
+
+1: memorizing
+2: generalizing
+
+Instance based 
+trainign ya leraning isnt done
+you pick data point new point comes and output is
+done according to the old data points
+(KNN,kernel)
+
+Modle based
+they find a methematcal relationship 
+between input and output and from that result
+you get a descion boundry and using that you 
+can classify the incoming point
+so you dont require the data points you need 
+the boundry which will come from the old data point
+but the new points dont require it
+in model based you have to find the rule
+requires less storage
+e.g(linear regress,descion tree)
+
+
+challenges you will faced in the ml journey
+
+1: Data collection : API, WebScraping
+
+2: insufficient Data/Labelled Data
+
+3: Non Representative Data
+
+4: Poor Quality Data
+
+5: Irrelevant features(garbage in garbage out)(feature engineering)
+
+6: Overfitting
+
+7: Underfitting
+
+8: Software integration
+
+9: offline learnign
+
+10: cost involved
+
+
+
+Machine Learning Development Life Cycle(MLDLC/MLDC)
+ 
+1: Frame the problem :whole plan 
+2: Gathering Data(csv, API, WebScraping) from a Database 
+you make a data warehouse and work on that
+3: Data Preprocessing: remove duplicates,remove missing values
+remove outliers, scale values
+4:Exploratory Data Analysis:study the relationship between
+input and output so you do visualization(univariate analysis,
+bivariate analysis, multivariate analysis),outliers Detection,
+handle imbalance dataset
+5:Feature engineering and selection : create new column
+for lesser memory or makes analysis easier
+6:Model Training,Evaluation and Selection: apply diffrent algorithms
+and see the results and decide which one too use on the basis
+of required metrics
+7:model Deployment
+8:Testing
+9:Optimize:model backup ,data backup,load balancing
+,frequenlty retrain duration
+
+
+
+Framing  a machine learning problem
+
+1: business problem to ml problem
+2:types of problems
+3 current solutions
+4:getting data
+5:metrics to measure
+6: online vs batch
+7: check assumptions
